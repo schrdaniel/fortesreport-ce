@@ -61,7 +61,7 @@ uses
   VCL.Graphics, VCL.StdCtrls,
   {$IfNDef FPC}
    {$IfDef SUPPORT_PNG}
-    pngimage,
+    Vcl.Imaging.pngimage,
    {$EndIf}
   {$EndIf}
   RLMetaFile, RLUtils, RLConsts;
