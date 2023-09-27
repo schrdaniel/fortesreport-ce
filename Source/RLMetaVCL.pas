@@ -58,7 +58,7 @@ uses
    LCLIntf, LCLType, LCLProc,
   {$EndIf}
   SysUtils, Classes, Math,
-  Graphics, StdCtrls,
+  VCL.Graphics, VCL.StdCtrls,
   RLMetaFile, RLUtils, RLConsts;
 
 type
