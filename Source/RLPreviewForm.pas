@@ -454,7 +454,7 @@ begin
     end;
 end;
 
-{$ifdef VCL}
+// {$ifdef VCL}
 const
   key_escape = vk_escape;
   key_home = vk_home;
@@ -470,7 +470,7 @@ const
   key_num_plus = vk_add;
   key_subtract = 189;
   key_num_subtract = vk_subtract;
-{$endif}
+// {$endif}
 
 constructor TRLPreviewForm.Create(AOwner: TComponent);
 begin
