@@ -1,6 +1,6 @@
 ﻿<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
     <PropertyGroup>
-        <ProjectGuid>{E06D2BF3-D56A-4D4A-9C11-8AB8198567B4}</ProjectGuid>
+        <ProjectGuid>{DB539225-5901-4342-BF46-E1410B02FEBF}</ProjectGuid>
     </PropertyGroup>
     <ItemGroup>
         <Projects Include="frce.dproj">
