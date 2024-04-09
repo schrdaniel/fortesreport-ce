@@ -55,14 +55,14 @@ uses
   {$IfDef MSWINDOWS}
    Windows,
   {$EndIf}
-   Messages, SysUtils, Math, Contnrs, Classes, ComCtrls,
+   Messages, SysUtils, Math, Contnrs, Classes, VCL.ComCtrls,
   {$IfDef FPC}
    LMessages, LCLIntf, LCLType, LazFileUtils,
   {$EndIf}
   {$IfDef CLX}
    QTypes, QControls, QButtons, QExtCtrls, QForms, QDialogs, QStdCtrls, QGraphics, Qt,
   {$Else}
-   Types, Controls, Buttons, ExtCtrls, Forms, Dialogs, StdCtrls, Graphics,
+   Types, VCL.Controls, VCL.Buttons, VCL.ExtCtrls, VCL.Forms, VCL.Dialogs, VCL.StdCtrls, VCL.Graphics,
   {$EndIf}
   RLConsts, RLMetaFile, RLPreview, RLFilters, RLUtils, RLPrintDialog,
   RLSaveDialog, RLPrinters, RLTypes, RLFindDialog, RLComponentFactory,
@@ -454,7 +454,7 @@ begin
     end;
 end;
 
-{$ifdef VCL}
+// {$ifdef VCL}
 const
   key_escape = vk_escape;
   key_home = vk_home;
@@ -470,7 +470,7 @@ const
   key_num_plus = vk_add;
   key_subtract = 189;
   key_num_subtract = vk_subtract;
-{$endif}
+// {$endif}
 
 constructor TRLPreviewForm.Create(AOwner: TComponent);
 begin
